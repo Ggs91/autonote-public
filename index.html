@@ -54,7 +54,7 @@
 
 <header>
   <h1>Politique de confidentialité d'autonote</h1>
-  <p class="chapeau">Dernière mise à jour : 28 août 2026</p>
+  <p class="chapeau">Dernière mise à jour : 20 septembre 2026</p>
 </header>
 
 <p>autonote est une application mobile qui transforme la voix en notes écrites. Vous enregistrez ce que vous dites, l'application le transcrit, en fait un résumé, et vous pouvez ensuite relire, organiser et interroger vos notes.</p>
@@ -151,16 +151,20 @@
 <p>Héberge le serveur d'autonote : la base de données, les fonctions de traitement et l'espace de stockage temporaire des enregistrements. C'est le seul endroit où l'application dépose vos fichiers audio, dans un espace privé auquel aucune autre installation n'a accès.</p>
 
 <h3>Soniox</h3>
-<p>Assure la transcription des enregistrements audio en texte, ainsi que la lecture à voix haute des résumés. Le serveur d'autonote lui donne un accès temporaire à l'enregistrement, valable au plus deux heures, le temps qu'il vienne le chercher.</p>
+<p>Assure la transcription des enregistrements audio en texte, ainsi que la lecture à voix haute des résumés. Le serveur d'autonote lui donne un accès temporaire à l'enregistrement, valable au plus deux heures, le temps qu'il vienne le chercher. Soniox n'utilise jamais les enregistrements ni les transcriptions pour entraîner ses modèles, et le serveur d'autonote lui demande l'effacement de chaque travail une fois celui ci terminé, plutôt que d'attendre la suppression automatique au bout de trente jours. Soniox est certifié SOC 2 Type 2 et ISO/IEC 27001:2022, et déclare sa conformité au RGPD.</p>
 
 <h3>OpenRouter</h3>
-<p>Relaie les demandes de résumé, de traduction et de discussion vers un modèle de langue. Les modèles utilisés aujourd'hui sont fournis par <strong>Google</strong> (Gemini) et <strong>OpenAI</strong> (GPT). Le texte de vos notes, ou le document importé, leur est transmis le temps de produire la réponse. Ces traitements sont soumis aux politiques de ces fournisseurs.</p>
+<p>Relaie les demandes de résumé, de traduction et de discussion vers un modèle de langue. Les modèles utilisés aujourd'hui sont fournis par <strong>Google</strong> (Gemini) et <strong>OpenAI</strong> (GPT). Le texte de vos notes, ou le document importé, leur est transmis le temps de produire la réponse. Le compte utilisé par autonote est réglé pour exclure de l'acheminement tout fournisseur autorisé à s'entraîner sur ce qui lui est envoyé. Le contenu de vos notes ne sert donc pas à entraîner ces modèles.</p>
 
 <h3>Apple</h3>
 <p>Tous les paiements passent par l'App Store. autonote ne voit jamais votre moyen de paiement, votre nom de facturation ni votre identifiant Apple : Apple traite l'achat et ne renvoie que le fait qu'un abonnement est actif.</p>
 
 <h3>RevenueCat</h3>
 <p>Gère l'état de votre abonnement, c'est à dire la validation du reçu délivré par Apple et la restauration de votre achat quand vous changez de téléphone. RevenueCat reçoit les informations techniques liées à l'achat, pas le contenu de vos notes.</p>
+
+<div class="encadre">
+  <p><strong>Une protection équivalente.</strong> Chacun de ces services est tenu, par ses engagements publics et ses certifications, à un niveau de protection équivalent à celui décrit ici : vos contenus ne leur sont transmis que le temps du traitement demandé, ils ne servent à entraîner aucun modèle, et ils ne sont ni vendus, ni loués, ni cédés. autonote ne leur transmet rien d'autre que ce qui est nécessaire à ce traitement.</p>
+</div>
 
 <div class="encadre">
   <p><strong>Ce qu'il n'y a pas.</strong> Aucune régie publicitaire, aucun outil de mesure d'audience ou d'analyse comportementale, aucun réseau social, aucun traceur tiers. Aucune donnée n'est vendue, louée ou cédée.</p>
