@@ -87,8 +87,8 @@
   <li>Vos <strong>dossiers</strong> et la façon dont vous rangez vos notes.</li>
   <li>Vos <strong>conversations</strong> avec l'assistant de discussion intégré.</li>
   <li>Les <strong>enregistrements audio</strong>, le temps de leur transcription.</li>
-  <li>Les <strong>documents PDF</strong> que vous choisissez d'importer ou de joindre à un cours.</li>
-  <li>Les <strong>photos</strong> que vous joignez à un cours, prises de votre pellicule ou avec l'appareil photo. Elles sont converties en JPEG et réduites sur le téléphone, puis gardées avec la note.</li>
+  <li>Les <strong>documents PDF</strong> que vous choisissez d'importer ou de joindre à un cours. Le texte qu'ils portent est lu sur le téléphone lui même, sans connexion, et gardé avec eux.</li>
+  <li>Les <strong>photos</strong> que vous joignez à un cours, prises de votre pellicule ou avec l'appareil photo. Elles sont converties en JPEG et réduites sur le téléphone, puis gardées avec la note. Le texte qu'elles portent est lu sur le téléphone lui même, sans connexion, et gardé avec elles.</li>
   <li>Les <strong>versions audio</strong> de vos résumés, lorsque vous demandez à les écouter.</li>
   <li>Vos <strong>réglages</strong> : langue de l'application, langue de transcription, retour haptique.</li>
   <li>Vos <strong>mots à moi</strong> : la liste des noms et du jargon métier que vous voulez voir écrits correctement.</li>
@@ -100,7 +100,7 @@
 
 <p>Vous restez maître de ces données : supprimer une note la supprime, avec ses documents et ses photos, et désinstaller l'application efface l'ensemble de cet espace.</p>
 
-<p><strong>Appareil photo et photothèque.</strong> autonote n'y accède que lorsque vous touchez vous même « Appareil photo » ou « Photos » pour joindre une image à un cours, et seulement à l'image que vous prenez ou choisissez. Les documents et les photos joints à un enregistrement restent sur votre téléphone : ils ne partent vers aucun serveur. Seul un PDF importé sans enregistrement, pour en faire une fiche de révision, est envoyé, comme l'indique la section 4.</p>
+<p><strong>Appareil photo et photothèque.</strong> autonote n'y accède que lorsque vous touchez vous même « Appareil photo » ou « Photos » pour joindre une image à un cours, et seulement à l'image que vous prenez ou choisissez. <strong>Une photo ne quitte jamais votre téléphone.</strong> Quand vous joignez des documents ou des photos à un enregistrement, les fichiers restent sur votre téléphone : seul le texte que le téléphone y a lu part, pour aider la transcription et compléter votre cours. Un PDF importé sans enregistrement part entier, pour en faire une fiche de révision, avec le texte lu sur les photos qui l'accompagnent ; des photos envoyées seules ne font partir que leur texte. La section 4 le détaille.</p>
 
 <h2>4. Ce qui part vers un serveur, et pourquoi</h2>
 
@@ -129,6 +129,26 @@
     </tr>
     <tr>
       <td>Un document PDF que vous importez seul, sans enregistrement</td>
+      <td>En produire une fiche de révision</td>
+      <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
+    </tr>
+    <tr>
+      <td>Le texte lu sur le téléphone dans les PDF et les photos que vous joignez à un enregistrement (jamais les fichiers eux mêmes) : les noms propres, sigles et mots rares qu'il contient, et son texte entier quand il est court</td>
+      <td>Aider la transcription à écrire correctement le vocabulaire du cours</td>
+      <td>Serveur d'autonote, puis Soniox</td>
+    </tr>
+    <tr>
+      <td>Le même texte, en entier</td>
+      <td>Compléter votre cours de ce que vos documents disent sur les mêmes sujets</td>
+      <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
+    </tr>
+    <tr>
+      <td>Le texte lu sur le téléphone dans des photos jointes à un PDF importé seul</td>
+      <td>Compléter la fiche de révision de ce PDF</td>
+      <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
+    </tr>
+    <tr>
+      <td>Le texte lu sur le téléphone dans des photos que vous envoyez seules, sans enregistrement (jamais les photos elles mêmes)</td>
       <td>En produire une fiche de révision</td>
       <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
     </tr>
@@ -204,6 +224,10 @@
     <tr>
       <td>Enregistrement audio déposé sur le serveur</td>
       <td>Effacé dès le retour du texte, et aussi en cas d'échec de la transcription. Si aucune réponse n'arrive, il est effacé au plus tard 24 heures après son dépôt.</td>
+    </tr>
+    <tr>
+      <td>Texte lu dans les documents et les photos joints à un cours, déposé pour l'écrire</td>
+      <td>Effacé dès que le cours est écrit, et aussi quand son écriture échoue.</td>
     </tr>
     <tr>
       <td>Document PDF envoyé pour résumé</td>
