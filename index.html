@@ -86,7 +86,7 @@
   <li>Vos <strong>notes</strong> : titres, transcriptions, résumés, dates.</li>
   <li>Vos <strong>dossiers</strong> et la façon dont vous rangez vos notes.</li>
   <li>Vos <strong>conversations</strong> avec l'assistant de discussion intégré.</li>
-  <li>Les <strong>enregistrements audio</strong>, le temps de leur transcription.</li>
+  <li>Les <strong>enregistrements audio</strong>, faits dans l'application ou importés depuis un fichier audio ou une vidéo, le temps de leur transcription. Un fichier importé est converti sur le téléphone lui même : seul son son est gardé, et le fichier de départ n'est pas conservé.</li>
   <li>Les <strong>documents PDF</strong> que vous choisissez d'importer ou de joindre à un cours. Le texte qu'ils portent est lu sur le téléphone lui même, sans connexion, et gardé avec eux.</li>
   <li>Les <strong>photos</strong> que vous joignez à un cours, prises de votre pellicule ou avec l'appareil photo. Elles sont converties en JPEG et réduites sur le téléphone, puis gardées avec la note. Le texte qu'elles portent est lu sur le téléphone lui même, sans connexion, et gardé avec elles.</li>
   <li>Les <strong>versions audio</strong> de vos résumés, lorsque vous demandez à les écouter.</li>
@@ -100,7 +100,7 @@
 
 <p>Vous restez maître de ces données : supprimer une note la supprime, avec ses documents et ses photos, et désinstaller l'application efface l'ensemble de cet espace.</p>
 
-<p><strong>Appareil photo et photothèque.</strong> autonote n'y accède que lorsque vous touchez vous même « Appareil photo » ou « Photos » pour joindre une image à un cours, et seulement à l'image que vous prenez ou choisissez. <strong>Une photo ne quitte jamais votre téléphone.</strong> Quand vous joignez des documents ou des photos à un enregistrement, les fichiers restent sur votre téléphone : seul le texte que le téléphone y a lu part, pour aider la transcription et compléter votre cours. Un PDF importé sans enregistrement part entier, pour en faire une fiche de révision, avec le texte lu sur les photos qui l'accompagnent ; des photos envoyées seules ne font partir que leur texte. La section 4 le détaille.</p>
+<p><strong>Appareil photo et photothèque.</strong> autonote n'y accède que lorsque vous touchez vous même « Appareil photo » ou « Photos » pour joindre une image à un cours, ou « Audio » puis « Vidéo de la pellicule » pour importer la vidéo d'un cours filmé, et seulement à l'image ou à la vidéo que vous prenez ou choisissez. <strong>Une photo ne quitte jamais votre téléphone.</strong> D'une vidéo, seul le son part, converti sur le téléphone, comme un enregistrement fait dans l'application ; les images restent sur votre téléphone. Quand vous joignez des documents ou des photos à un enregistrement, les fichiers restent sur votre téléphone : seul le texte que le téléphone y a lu part, pour aider la transcription et compléter votre cours. Un PDF importé sans enregistrement part entier, pour en faire une fiche de révision, avec le texte lu sur les photos qui l'accompagnent ; des photos envoyées seules ne font partir que leur texte. La section 4 le détaille.</p>
 
 <h2>4. Ce qui part vers un serveur, et pourquoi</h2>
 
@@ -113,7 +113,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>L'enregistrement audio d'une note</td>
+      <td>L'enregistrement audio d'une note, fait dans l'application ou importé (d'une vidéo, seulement son son)</td>
       <td>Le transformer en texte</td>
       <td>Serveur d'autonote (Supabase), puis Soniox</td>
     </tr>
@@ -168,7 +168,7 @@
       <td>Serveur d'autonote</td>
     </tr>
     <tr>
-      <td>Des événements d'usage : ouverture de l'application, écrans de la présentation initiale vus, ouverture et fermeture de l'écran d'abonnement, début et issue d'un achat, préparation d'un cours, ajout d'un document à un cours (seulement sa nature, PDF ou photo) ou son refus, envoi d'une note avec sa durée et le nombre de documents joints, note prête. Chacun accompagné d'un identifiant technique aléatoire, du modèle d'appareil, de la version d'iOS et de l'application, de la langue, d'une localisation approximative (le pays, parfois la ville) déduite de l'adresse IP au moment de la réception, et du fait que vous soyez abonné ou non. L'adresse IP elle même n'est pas conservée. <strong>Jamais le contenu d'une note, un titre, un texte saisi, un nom de fichier ni un enregistrement.</strong></td>
+      <td>Des événements d'usage : ouverture de l'application, écrans de la présentation initiale vus, ouverture et fermeture de l'écran d'abonnement, début et issue d'un achat, préparation d'un cours, ajout d'un document à un cours (seulement sa nature, PDF ou photo) ou son refus, import d'un enregistrement (sa nature, audio ou vidéo, son format, sa durée et le temps de sa conversion) ou son refus, envoi d'une note avec sa durée et le nombre de documents joints, note prête. Chacun accompagné d'un identifiant technique aléatoire, du modèle d'appareil, de la version d'iOS et de l'application, de la langue, d'une localisation approximative (le pays, parfois la ville) déduite de l'adresse IP au moment de la réception, et du fait que vous soyez abonné ou non. L'adresse IP elle même n'est pas conservée. <strong>Jamais le contenu d'une note, un titre, un texte saisi, un nom de fichier ni un enregistrement.</strong></td>
       <td>Comprendre comment l'application est utilisée et où elle peut être améliorée, mesurer l'efficacité de la présentation initiale et de l'écran d'abonnement</td>
       <td>PostHog</td>
     </tr>
