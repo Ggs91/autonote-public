@@ -54,7 +54,7 @@
 
 <header>
   <h1>Politique de confidentialité d'autonote</h1>
-  <p class="chapeau">Dernière mise à jour : 7 octobre 2026</p>
+  <p class="chapeau">Dernière mise à jour : 26 octobre 2026</p>
 </header>
 
 <p>autonote est une application mobile qui transforme la voix en notes écrites. Vous enregistrez ce que vous dites, l'application le transcrit, en fait un résumé, et vous pouvez ensuite relire, organiser et interroger vos notes.</p>
@@ -87,7 +87,8 @@
   <li>Vos <strong>dossiers</strong> et la façon dont vous rangez vos notes.</li>
   <li>Vos <strong>conversations</strong> avec l'assistant de discussion intégré.</li>
   <li>Les <strong>enregistrements audio</strong>, le temps de leur transcription.</li>
-  <li>Les <strong>documents PDF</strong> que vous choisissez d'importer.</li>
+  <li>Les <strong>documents PDF</strong> que vous choisissez d'importer ou de joindre à un cours.</li>
+  <li>Les <strong>photos</strong> que vous joignez à un cours, prises de votre pellicule ou avec l'appareil photo. Elles sont converties en JPEG et réduites sur le téléphone, puis gardées avec la note.</li>
   <li>Les <strong>versions audio</strong> de vos résumés, lorsque vous demandez à les écouter.</li>
   <li>Vos <strong>réglages</strong> : langue de l'application, langue de transcription, retour haptique.</li>
   <li>Vos <strong>mots à moi</strong> : la liste des noms et du jargon métier que vous voulez voir écrits correctement.</li>
@@ -97,7 +98,9 @@
   <li>Les <strong>textes d'aide</strong> et la vidéo de présentation, téléchargés une fois puis conservés localement.</li>
 </ul>
 
-<p>Vous restez maître de ces données : supprimer une note la supprime, et désinstaller l'application efface l'ensemble de cet espace.</p>
+<p>Vous restez maître de ces données : supprimer une note la supprime, avec ses documents et ses photos, et désinstaller l'application efface l'ensemble de cet espace.</p>
+
+<p><strong>Appareil photo et photothèque.</strong> autonote n'y accède que lorsque vous touchez vous même « Appareil photo » ou « Photos » pour joindre une image à un cours, et seulement à l'image que vous prenez ou choisissez. Les documents et les photos joints à un enregistrement restent sur votre téléphone : ils ne partent vers aucun serveur. Seul un PDF importé sans enregistrement, pour en faire une fiche de révision, est envoyé, comme l'indique la section 4.</p>
 
 <h2>4. Ce qui part vers un serveur, et pourquoi</h2>
 
@@ -125,8 +128,8 @@
       <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
     </tr>
     <tr>
-      <td>Un document PDF que vous importez</td>
-      <td>En produire un résumé</td>
+      <td>Un document PDF que vous importez seul, sans enregistrement</td>
+      <td>En produire une fiche de révision</td>
       <td>Serveur d'autonote, puis OpenRouter et le modèle qui répond</td>
     </tr>
     <tr>
@@ -145,7 +148,7 @@
       <td>Serveur d'autonote</td>
     </tr>
     <tr>
-      <td>Des événements d'usage : ouverture de l'application, écrans de la présentation initiale vus, ouverture et fermeture de l'écran d'abonnement, début et issue d'un achat, création d'une note et sa durée, note prête. Chacun accompagné d'un identifiant technique aléatoire, du modèle d'appareil, de la version d'iOS et de l'application, de la langue, d'une localisation approximative (le pays, parfois la ville) déduite de l'adresse IP au moment de la réception, et du fait que vous soyez abonné ou non. L'adresse IP elle même n'est pas conservée. <strong>Jamais le contenu d'une note, un titre, un texte saisi, un nom de fichier ni un enregistrement.</strong></td>
+      <td>Des événements d'usage : ouverture de l'application, écrans de la présentation initiale vus, ouverture et fermeture de l'écran d'abonnement, début et issue d'un achat, préparation d'un cours, ajout d'un document à un cours (seulement sa nature, PDF ou photo) ou son refus, envoi d'une note avec sa durée et le nombre de documents joints, note prête. Chacun accompagné d'un identifiant technique aléatoire, du modèle d'appareil, de la version d'iOS et de l'application, de la langue, d'une localisation approximative (le pays, parfois la ville) déduite de l'adresse IP au moment de la réception, et du fait que vous soyez abonné ou non. L'adresse IP elle même n'est pas conservée. <strong>Jamais le contenu d'une note, un titre, un texte saisi, un nom de fichier ni un enregistrement.</strong></td>
       <td>Comprendre comment l'application est utilisée et où elle peut être améliorée, mesurer l'efficacité de la présentation initiale et de l'écran d'abonnement</td>
       <td>PostHog</td>
     </tr>
